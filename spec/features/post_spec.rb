@@ -24,7 +24,7 @@ describe 'navigate' do
       post1 = FactoryGirl.build_stubbed(:post)
       post2 = FactoryGirl.build_stubbed(:second_post)
       visit posts_path
-      expect(page).to have_content(/Rationale|content/)
+      expect(page).to have_content(/rationale|content/)
 
     end
   end
