@@ -1,0 +1,15 @@
+  <div class="form-group">
+    <%= f.label :status, class: 'col-sm-2 control-label' %>
+      <div class="col-sm-10">
+        
+        <%= f.radio_button :status, 'submitted' %>
+        <%= f.label :status, 'Submitted' %>
+        
+        <%= f.radio_button :status, 'approved' %>
+        <%= f.label :status, 'Approved' %>
+        
+        <%= f.radio_button :status, 'rejected' %>
+        <%= f.label :status, 'Rejected' %>
+        
+    </div>
+  </div>
