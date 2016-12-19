@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem "gritter", "1.2.0"
 gem 'bourbon'
 gem "administrate", "~> 0.3.0"
+gem "pundit"
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
