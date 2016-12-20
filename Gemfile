@@ -19,6 +19,7 @@ gem 'bourbon'
 gem "administrate", "~> 0.3.0"
 gem "pundit"
 gem 'puma'
+gem 'twilio-ruby', '~> 4.11.1'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -46,6 +47,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'dotenv-rails'
 end
 
 group :development do
