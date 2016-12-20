@@ -18,6 +18,7 @@ gem "gritter", "1.2.0"
 gem 'bourbon'
 gem "administrate", "~> 0.3.0"
 gem "pundit"
+gem 'puma'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
