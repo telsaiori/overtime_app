@@ -2,20 +2,12 @@
   <div class='pending-homepage row'>
     <h2>Items Pending Your Approval</h2>
     <hr>
-    
-
+    <%= render partial: 'pending_approval', objects: @pending_approvals %>
   </div>
 
-  <div class='pending-homepage row'>
-    <h2>Confirmation Log</h2>
-    <hr>
-    
-
-
-    <div class='clearfix'></div>
-
-    <hr>
-
-    <%= link_to 'View All Items', audit_logs_path, class: 'btn btn-primary' %>
+  <div class='pending-homepage'>
+    <div>
+      <p>asdf</p>
+    </div>
   </div>
 </div>
