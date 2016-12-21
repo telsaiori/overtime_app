@@ -20,6 +20,7 @@ gem "administrate", "~> 0.3.0"
 gem "pundit"
 gem 'puma'
 gem 'twilio-ruby', '~> 4.11.1'
+gem 'kaminari'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
