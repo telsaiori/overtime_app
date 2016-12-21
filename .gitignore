@@ -13,6 +13,7 @@
 !/log/.keep
 !/tmp/.keep
 /.env
+db/seeds.rb
 
 # Ignore Byebug command history file.
 .byebug_history
