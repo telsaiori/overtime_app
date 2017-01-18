@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :audit_logs, except: [:new, :edit, :destroy] do 
     member do 
       get :confirm
+      get :my_auditlog
     end
   end
   

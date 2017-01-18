@@ -10,6 +10,11 @@ class AuditLogsController < ApplicationController
     authorize audit_log
     audit_log.confirmed!
     redirect_to root_path, notice: 'Thank you, Your confirmation has been successfully made'
+  end
+
+  def my_auditlog
+    user = current_user
+    @my_auditlogs = AuditLog.where(user_id: user.id)
 
   end
 end

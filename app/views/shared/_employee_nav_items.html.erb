@@ -1,6 +1,9 @@
 <li class="<%= active?(posts_path) %>">
   <%= link_to 'Entries', posts_path %>
 </li>
+<li class="<%= active?(my_auditlog_audit_log_path(current_user)) %>">
+  <%= link_to 'No overtime weeks check', my_auditlog_audit_log_path(current_user.id) %>
+</li>
 <li class="<%= active?(new_post_path) %>">
   <%= link_to 'Request Overtime', new_post_path, id: 'new_post_from_nav' %>
 </li>
