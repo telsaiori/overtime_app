@@ -11,6 +11,20 @@ namespace :notification do
 
   end
 
+  desc "Check if there are any overtime work didn't report"
+  task check_overtime: :environment do 
+    employees = User.where(type: nil)
+    week_start = Date.today.beginning_of_week
+    week_end = Date.today.end_of_week
+    no_overtime_week = []
+    employees.each do |employee|
+      no_overtime_week = employee.posts.where(date: @week_start..@week_end)
+      unless no_overtime_week.any?
+        AuditLog.create!(user_id: employee.id, status: 0, start_date: week_start, end_date: week_end)
+      end
+    end
+  end
+
   desc "Sends mail notification to manager (admin users) each day to inform of pending overtime requests"
   task manager_email: :environment do
     submitted_posts = Post.submitted

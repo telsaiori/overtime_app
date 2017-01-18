@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Status</th>
+      <th>start_date</th>
+      <th>end_date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @my_auditlogs.each_with_index do |my_auditlog, index| %>
+      <tr>
+        <td><%= index+1 %></td>
+        <td><%= status_label my_auditlog.status %></td>
+        <td><%= my_auditlog.start_date %></td>
+        <td><%= my_auditlog.end_date %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
